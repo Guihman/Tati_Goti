@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurora Velas — velas artesanais aromáticas para transformar ambientes em rituais de aconchego, presença e beleza." />
+  <meta name="theme-color" content="#120907" />
+  <title>Aurora Velas | Velas Artesanais Aromáticas</title>
+
+  <meta property="og:title" content="Aurora Velas | Velas Artesanais Aromáticas" />
+  <meta property="og:description" content="Velas artesanais, aromas autorais e presentes sensoriais para transformar pequenos momentos em rituais." />
+  <meta property="og:type" content="website" />
+  <meta name="format-detection" content="telephone=no" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Aurora Velas",
+      "description": "Ateliê de velas artesanais aromáticas, kits presenteáveis e aromas autorais.",
+      "sameAs": ["https://instagram.com/"]
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <canvas id="emberCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="light-leak light-one" aria-hidden="true"></div>
+  <div class="light-leak light-two" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#inicio" aria-label="Ir para o início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" role="img">
+          <path d="M25.4 5.8c6.9 7.3 11.2 13.9 11.2 22.1 0 8.2-5.7 14.4-12.6 14.4S11.4 36.1 11.4 28.4c0-6.2 3.8-11.4 8.5-16.4-.4 5.8 1.4 8.9 4 10.7 2.9-4.5 3.2-9.8 1.5-16.9Z" />
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>Aurora Velas</strong>
+        <small>Ateliê aromático</small>
+      </span>
+    </a>
+
+    <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav-links" aria-label="Menu principal">
+      <a href="#colecoes">Coleções</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#compra">Como comprar</a>
+      <a href="#ritual">Ritual</a>
+      <a href="#quiz">Quiz</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">
+          <span class="pulse-dot"></span>
+          Velas artesanais aromáticas
+        </span>
+
+        <h1>
+          Acenda o seu
+          <span class="gradient-text">ritual de presença.</span>
+        </h1>
+
+        <p class="hero-text">
+          Velas feitas à mão para transformar ambientes em momentos: aroma, luz baixa,
+          aconchego e uma estética que deixa qualquer presente mais especial.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary magnetic" data-whatsapp="Quero conhecer as velas artesanais da Aurora Velas" href="#contato">
+            Comprar pelo WhatsApp
+            <span>↗</span>
+          </a>
+          <a class="btn btn-secondary magnetic" href="#colecoes">
+            Ver coleções
+          </a>
+        </div>
+
+        <div class="hero-badges" aria-label="Facilidades de compra">
+          <span>Atendimento pelo WhatsApp</span>
+          <span>Kits para presente</span>
+          <span>Retirada ou entrega combinada</span>
+        </div>
+
+        <div class="hero-metrics" aria-label="Diferenciais da marca">
+          <div>
+            <strong>Feito à mão</strong>
+            <span>produção artesanal</span>
+          </div>
+          <div>
+            <strong>Aromas autorais</strong>
+            <span>sensações memoráveis</span>
+          </div>
+          <div>
+            <strong>Presenteável</strong>
+            <span>embalagem elegante</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-stage reveal delay-1" aria-label="Vela aromática em destaque">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <article class="candle-showcase tilt-card">
+          <span class="showcase-kicker">Coleção assinatura</span>
+          <div class="candle-scene" aria-hidden="true">
+            <div class="smoke smoke-a"></div>
+            <div class="smoke smoke-b"></div>
+            <div class="flame">
+              <span class="flame-core"></span>
+            </div>
+            <div class="wick"></div>
+            <div class="wax-glow"></div>
+            <div class="candle-jar">
+              <div class="jar-shine"></div>
+              <div class="jar-label">
+                <strong>Aurora</strong>
+                <span>Vanilla · Amber</span>
+              </div>
+            </div>
+            <div class="saucer"></div>
+          </div>
+          <div class="showcase-footer">
+            <div>
+              <strong>Aurora Vanilla</strong>
+              <span>baunilha, âmbar e musk</span>
+            </div>
+            <button class="icon-button" type="button" data-product-whatsapp="Aurora Vanilla" aria-label="Pedir Aurora Vanilla no WhatsApp">+</button>
+          </div>
+        </article>
+
+        <div class="mini-card ingredient-card">
+          <span>✦</span>
+          <p>Cera vegetal, acabamento delicado e aroma envolvente.</p>
+        </div>
+
+        <div class="mini-card aroma-card">
+          <span>Top aroma</span>
+          <strong>Âmbar quente</strong>
+          <small>sofisticado e aconchegante</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee-section" aria-label="Aromas disponíveis">
+      <div class="marquee marquee-forward">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Baunilha</span><span>Âmbar</span><span>Lavanda</span><span>Chá branco</span><span>Flor de algodão</span><span>Madeira</span><span>Canela</span><span>Verbena</span>
+          </div>
+          <div class="marquee-group" aria-hidden="true">
+            <span>Baunilha</span><span>Âmbar</span><span>Lavanda</span><span>Chá branco</span><span>Flor de algodão</span><span>Madeira</span><span>Canela</span><span>Verbena</span>
+          </div>
+        </div>
+      </div>
+      <div class="marquee marquee-reverse" aria-hidden="true">
+        <div class="marquee-track">
+          <div class="marquee-group">
+            <span>Ritual</span><span>Presente</span><span>Aconchego</span><span>Decoração</span><span>Relaxamento</span><span>Sofisticação</span><span>Afeto</span><span>Luz</span>
+          </div>
+          <div class="marquee-group">
+            <span>Ritual</span><span>Presente</span><span>Aconchego</span><span>Decoração</span><span>Relaxamento</span><span>Sofisticação</span><span>Afeto</span><span>Luz</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro" id="sobre">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Sobre o ateliê</span>
+        <h2>Uma marca feita para quem acredita no poder dos pequenos rituais.</h2>
+      </div>
+
+      <div class="intro-grid">
+        <article class="glass-panel story-card reveal">
+          <p>
+            A Aurora Velas nasceu para criar mais do que fragrâncias. Cada vela é pensada como uma
+            experiência: o brilho da chama, a delicadeza da embalagem, o perfume que permanece no ambiente
+            e a sensação de pausa no meio da rotina.
+          </p>
+          <p>
+            O resultado é uma linha artesanal com presença visual premium, perfeita para decorar, relaxar,
+            presentear e tornar uma casa mais acolhedora.
+          </p>
+          <a class="text-link" data-whatsapp="Quero saber mais sobre a história e as velas da Aurora" href="#contato">Conversar com a artesã →</a>
+        </article>
+
+        <div class="stat-grid reveal delay-1">
+          <div class="stat-card tilt-card">
+            <strong data-count="100">0</strong>
+            <span>% artesanal</span>
+          </div>
+          <div class="stat-card tilt-card">
+            <strong data-count="8">0</strong>
+            <span>famílias olfativas</span>
+          </div>
+          <div class="stat-card tilt-card">
+            <strong>Slow</strong>
+            <span>produção com cuidado</span>
+          </div>
+          <div class="stat-card tilt-card">
+            <strong>Luz</strong>
+            <span>design sensorial</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section collections" id="colecoes">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Coleções aromáticas</span>
+        <h2>Escolha pela sensação que você quer criar no ambiente.</h2>
+      </div>
+
+      <div class="filter-bar reveal" role="list" aria-label="Filtrar coleção">
+        <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+        <button class="filter-chip" type="button" data-filter="calma" aria-pressed="false">Calma</button>
+        <button class="filter-chip" type="button" data-filter="presente" aria-pressed="false">Presente</button>
+        <button class="filter-chip" type="button" data-filter="sofisticado" aria-pressed="false">Sofisticado</button>
+        <button class="filter-chip" type="button" data-filter="energia" aria-pressed="false">Energia</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card tilt-card reveal" data-category="calma presente" data-product="Jardim de Lavanda">
+          <div class="product-visual lavender" aria-hidden="true">
+            <i class="product-smoke smoke-one"></i>
+            <i class="product-smoke smoke-two"></i>
+            <div class="real-candle jar-frosted jar-ribbed">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Jardim</b><small>Lavanda</small></i>
+            </div>
+            <i class="product-addon addon-lavender"></i>
+            <i class="product-addon addon-lavender-two"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Relaxante</span>
+            <h3>Jardim de Lavanda</h3>
+            <p>Lavanda, camomila e algodão. Para desacelerar e criar uma noite mais leve.</p>
+            <div class="note-row"><span>Floral</span><span>Suave</span><span>Aconchego</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Sob encomenda</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Jardim de Lavanda">Pedir no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card tilt-card reveal delay-1" data-category="sofisticado presente" data-product="Madeira Âmbar">
+          <div class="product-visual amber" aria-hidden="true">
+            <i class="product-smoke smoke-one"></i>
+            <div class="real-candle jar-amber jar-ribbed">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Madeira</b><small>Âmbar</small></i>
+            </div>
+            <i class="product-addon addon-wood"></i>
+            <i class="product-addon addon-wood second"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Elegante</span>
+            <h3>Madeira Âmbar</h3>
+            <p>Madeiras quentes, âmbar e baunilha seca. Um aroma intenso, adulto e marcante.</p>
+            <div class="note-row"><span>Amadeirado</span><span>Quente</span><span>Premium</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Intensidade alta</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Madeira Âmbar">Pedir no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card tilt-card reveal delay-2" data-category="energia" data-product="Citrus Solar">
+          <div class="product-visual citrus" aria-hidden="true">
+            <i class="product-smoke smoke-one"></i>
+            <div class="real-candle jar-clear jar-rounded">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Citrus</b><small>Solar</small></i>
+            </div>
+            <i class="product-addon addon-orange"></i>
+            <i class="product-addon addon-leaf"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Energizante</span>
+            <h3>Citrus Solar</h3>
+            <p>Laranja, verbena e capim-limão. Para renovar o ar e trazer frescor ao dia.</p>
+            <div class="note-row"><span>Cítrico</span><span>Fresco</span><span>Leve</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Ambiente diurno</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Citrus Solar">Pedir no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card tilt-card reveal" data-category="presente calma" data-product="Flor de Algodão">
+          <div class="product-visual cotton" aria-hidden="true">
+            <i class="product-smoke smoke-two"></i>
+            <div class="real-candle jar-ceramic jar-soft">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Flor</b><small>Algodão</small></i>
+            </div>
+            <i class="product-addon addon-cotton"></i>
+            <i class="product-addon addon-cotton second"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Delicada</span>
+            <h3>Flor de Algodão</h3>
+            <p>Notas limpas, florais brancos e musk. Uma escolha segura para presentear.</p>
+            <div class="note-row"><span>Clean</span><span>Floral</span><span>Presente</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Boa para presente</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Flor de Algodão">Pedir no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card tilt-card reveal delay-1" data-category="sofisticado" data-product="Noite de Canela">
+          <div class="product-visual cinnamon" aria-hidden="true">
+            <i class="product-smoke smoke-one"></i>
+            <div class="real-candle jar-cinnamon jar-ribbed">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Noite</b><small>Canela</small></i>
+            </div>
+            <i class="product-addon addon-cinnamon"></i>
+            <i class="product-addon addon-star"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Envolvente</span>
+            <h3>Noite de Canela</h3>
+            <p>Canela, especiarias e baunilha cremosa. Perfeita para dias frios e mesas especiais.</p>
+            <div class="note-row"><span>Especiado</span><span>Doce</span><span>Intenso</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Ocasiões especiais</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Noite de Canela">Pedir no WhatsApp</button>
+          </div>
+        </article>
+
+        <article class="product-card tilt-card reveal delay-2" data-category="calma sofisticado" data-product="Chá Branco">
+          <div class="product-visual tea" aria-hidden="true">
+            <i class="product-smoke smoke-two"></i>
+            <div class="real-candle jar-sage jar-minimal">
+              <i class="candle-flame"></i>
+              <i class="candle-wick"></i>
+              <i class="wax-surface"></i>
+              <i class="wax-fill"></i>
+              <i class="glass-shine shine-left"></i>
+              <i class="glass-shine shine-right"></i>
+              <i class="candle-label"><b>Chá</b><small>Branco</small></i>
+            </div>
+            <i class="product-addon addon-tea"></i>
+            <i class="product-addon addon-tea second"></i>
+          </div>
+          <div class="product-content">
+            <span class="product-tag">Minimalista</span>
+            <h3>Chá Branco</h3>
+            <p>Chá branco, bergamota e folhas verdes. Aroma elegante para sala, lavabo e escritório.</p>
+            <div class="note-row"><span>Verde</span><span>Clean</span><span>Chique</span></div>
+            <div class="product-meta"><span>Consultar valores</span><span>Ambientes sociais</span></div>
+            <button class="btn-small" type="button" data-product-whatsapp="Chá Branco">Pedir no WhatsApp</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section purchase-flow" id="compra">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Como comprar</span>
+        <h2>Um caminho simples para transformar interesse em pedido.</h2>
+      </div>
+
+      <div class="flow-grid">
+        <article class="flow-card reveal">
+          <span class="flow-number">01</span>
+          <h3>Escolha o aroma</h3>
+          <p>Navegue pelas coleções ou responda ao quiz para chegar em uma sugestão mais certeira.</p>
+        </article>
+        <article class="flow-card reveal delay-1">
+          <span class="flow-number">02</span>
+          <h3>Combine os detalhes</h3>
+          <p>Fale pelo WhatsApp para conferir valores, tamanhos, embalagem e disponibilidade.</p>
+        </article>
+        <article class="flow-card reveal delay-2">
+          <span class="flow-number">03</span>
+          <h3>Receba com carinho</h3>
+          <p>Finalize a encomenda e combine retirada, entrega local ou envio conforme a operação da marca.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section ritual" id="ritual">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Experiência sensorial</span>
+        <h2>Do aroma à chama: tudo é desenhado para encantar.</h2>
+      </div>
+
+      <div class="ritual-grid">
+        <article class="ritual-card reveal">
+          <span class="ritual-number">01</span>
+          <h3>Escolha a intenção</h3>
+          <p>Relaxar, perfumar a casa, receber visitas ou presentear alguém especial.</p>
+        </article>
+        <article class="ritual-card reveal delay-1">
+          <span class="ritual-number">02</span>
+          <h3>Prepare o ambiente</h3>
+          <p>Luz baixa, superfície segura e alguns minutos para a fragrância se espalhar.</p>
+        </article>
+        <article class="ritual-card reveal delay-2">
+          <span class="ritual-number">03</span>
+          <h3>Viva a pausa</h3>
+          <p>Um detalhe simples que muda a energia do espaço e marca o momento.</p>
+        </article>
+      </div>
+
+      <div class="sensory-panel reveal">
+        <div class="scent-wheel" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+        <div>
+          <span class="section-kicker">Assinatura da marca</span>
+          <h3>Uma estética quente, sofisticada e acolhedora.</h3>
+          <p>
+            O visual do ateliê une tons âmbar, vidro fosco, brilho de chama, partículas luminosas e
+            movimento suave. É um site pensado para vender, mas também para fazer a pessoa sentir o produto
+            antes mesmo de comprar.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz" id="quiz">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Quiz de aroma</span>
+        <h2>Descubra qual vela combina com o seu momento.</h2>
+      </div>
+
+      <article class="quiz-card reveal" aria-label="Quiz para escolher aroma ideal">
+        <div class="quiz-progress">
+          <span data-quiz-step-label>Etapa 1 de 5</span>
+          <div class="quiz-bar"><span data-quiz-bar></span></div>
+        </div>
+
+        <div class="quiz-question" data-quiz-question>
+          <span class="quiz-overline">Intenção</span>
+          <h3></h3>
+          <div class="quiz-options" data-quiz-options></div>
+        </div>
+
+        <div class="quiz-result" data-quiz-result hidden aria-live="polite">
+          <span class="quiz-overline">Resultado</span>
+          <h3>Seu ritual aromático está pronto.</h3>
+          <p>Envie suas respostas pelo WhatsApp para receber uma sugestão personalizada de vela, tamanho e opção de presente.</p>
+          <div class="quiz-summary" data-quiz-summary></div>
+          <div class="quiz-result-actions">
+            <a class="btn btn-primary" data-quiz-whatsapp href="#" target="_blank" rel="noopener">Enviar respostas</a>
+            <button class="btn btn-secondary" type="button" data-quiz-restart>Refazer quiz</button>
+          </div>
+        </div>
+
+        <div class="quiz-actions" data-quiz-actions>
+          <button class="btn btn-secondary" type="button" data-quiz-back>Voltar</button>
+          <button class="btn btn-primary" type="button" data-quiz-next>Continuar</button>
+        </div>
+      </article>
+    </section>
+
+    <section class="section care">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Cuidados com a vela</span>
+        <h2>Pequenos detalhes para uma queima mais bonita e segura.</h2>
+      </div>
+
+      <div class="care-grid">
+        <article class="care-card reveal">
+          <span>✂</span>
+          <h3>Apare o pavio</h3>
+          <p>Antes de reacender, deixe o pavio com cerca de 5 mm para uma chama mais estável.</p>
+        </article>
+        <article class="care-card reveal delay-1">
+          <span>◷</span>
+          <h3>Primeira queima</h3>
+          <p>Deixe a superfície derreter de forma uniforme para preservar a beleza da vela.</p>
+        </article>
+        <article class="care-card reveal delay-2">
+          <span>▣</span>
+          <h3>Use com segurança</h3>
+          <p>Mantenha em superfície firme, longe de tecidos, vento forte, crianças, pets e objetos inflamáveis.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq">
+      <div class="section-heading reveal">
+        <span class="section-kicker">Dúvidas frequentes</span>
+        <h2>Informações importantes antes de comprar.</h2>
+      </div>
+
+      <div class="accordion reveal">
+        <div class="accordion-item">
+          <button class="accordion-button" type="button" aria-expanded="false">
+            Vocês fazem velas para presente?
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Sim. O site foi pensado para vender velas avulsas, kits, lembranças e opções presenteáveis. Você pode personalizar esse texto com as opções reais da cliente.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" type="button" aria-expanded="false">
+            Posso encomendar uma fragrância específica?
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Sim, caso a marca trabalhe com encomendas. O botão do WhatsApp já pode levar a conversa com a artesã para combinar aroma, quantidade e prazo.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" type="button" aria-expanded="false">
+            Como funciona a entrega?
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Adapte conforme a operação: retirada, entrega local, motoboy, Correios ou transportadora. A estrutura do site já deixa isso pronto para explicar.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <button class="accordion-button" type="button" aria-expanded="false">
+            Como escolher uma vela para presentear?
+            <span>+</span>
+          </button>
+          <div class="accordion-content">
+            <p>Para presente, aromas delicados como flor de algodão, lavanda e chá branco costumam agradar mais. Também é possível pedir orientação pelo WhatsApp de acordo com o estilo da pessoa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <div class="contact-card reveal">
+        <div>
+          <span class="section-kicker">Pedidos e encomendas</span>
+          <h2>Vamos escolher a vela ideal para o seu momento?</h2>
+          <p>
+            Fale pelo WhatsApp para consultar aromas disponíveis, valores, kits, prazos e opções para presente.
+          </p>
+          <ul class="contact-list" aria-label="Informações do atendimento">
+            <li>Resposta com sugestão de aroma</li>
+            <li>Opções de embalagem presenteável</li>
+            <li>Pedido combinado direto com a artesã</li>
+          </ul>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary magnetic" data-whatsapp="Olá! Vim pelo site e quero conhecer as velas disponíveis." href="#" target="_blank" rel="noopener">Chamar no WhatsApp</a>
+          <a class="btn btn-secondary magnetic" href="https://instagram.com/" target="_blank" rel="noopener">Ver Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="floating-whatsapp" data-whatsapp="Olá! Vim pelo site e gostaria de fazer um pedido de vela artesanal." href="#" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">
+    <span>WhatsApp</span>
+    <strong>↗</strong>
+  </a>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Aurora Velas. Velas artesanais aromáticas.</p>
+    <a href="#inicio">Voltar ao topo ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="64" height="64" rx="18" fill="#120907"/>
+  <circle cx="32" cy="34" r="22" fill="url(#g)" opacity=".18"/>
+  <path d="M34.1 8.8C43.2 18.4 48.9 27 48.9 37.7c0 10.8-7.5 18.9-16.7 18.9S15.6 48.5 15.6 38.4c0-8.1 5-15 11.2-21.5-.5 7.6 1.8 11.7 5.3 14.1 3.8-5.9 4.2-12.9 2-22.2Z" fill="url(#flame)"/>
+  <path d="M32.7 35.5c4.4 5.5 5.9 9.4 5.9 13 0 4.1-2.7 7-6.4 7s-6.5-3-6.5-7c0-3.3 2.1-6.1 7-13Z" fill="#FFF6C6" opacity=".92"/>
+  <defs>
+    <linearGradient id="flame" x1="18" x2="47" y1="10" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF1AA"/>
+      <stop offset=".45" stop-color="#FFB14B"/>
+      <stop offset="1" stop-color="#D65D2B"/>
+    </linearGradient>
+    <radialGradient id="g" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 34) rotate(90) scale(24)">
+      <stop stop-color="#FFD37E"/>
+      <stop offset="1" stop-color="#FF9F43" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg>
