@@ -1781,15 +1781,17 @@ h1 {
     padding: 15px;
   }
 
-  .hero {
-    width: min(calc(100% - 24px), var(--max));
-    padding-top: 112px;
-    gap: 12px;
-  }
+ .hero {
+  width: min(calc(100% - 20px), var(--max));
+  padding-top: 112px;
+  gap: 28px;
+  overflow: hidden;
+}
 
-  h1 {
-    font-size: clamp(3.6rem, 17vw, 5.2rem);
-  }
+h1 {
+  font-size: clamp(2.9rem, 13vw, 4.6rem);
+  line-height: .9;
+}
 
   .hero-metrics,
   .stat-grid,
@@ -1855,6 +1857,9 @@ h1 {
     align-items: flex-start;
   }
 }
+.hero-actions .btn {
+  width: 100%;
+}
 
 @media (max-width: 560px) {
   .brand-text strong {
@@ -1880,11 +1885,13 @@ h1 {
     width: 100%;
   }
 
-  .hero-stage {
-    min-height: 480px;
-    transform: scale(.9);
-    margin-inline: -24px;
-  }
+.hero-stage {
+  min-height: 420px;
+  transform: scale(.82);
+  margin-inline: 0;
+  width: 100%;
+  overflow: hidden;
+}
 
   .orbit-one {
     width: 410px;
@@ -1896,10 +1903,12 @@ h1 {
     height: 300px;
   }
 
-  .candle-showcase {
-    width: 370px;
-    border-radius: 38px;
-  }
+ .candle-showcase {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 38px;
+  margin-inline: auto;
+}
 
   .mini-card {
     max-width: 168px;
@@ -2618,5 +2627,15 @@ button:focus-visible,
   .marquee-reverse .marquee-track {
     animation-direction: reverse !important;
     animation-duration: 38s !important;
+  }
+}
+@media (max-width: 560px) {
+  * {
+    max-width: 100%;
+  }
+
+  body,
+  html {
+    overflow-x: hidden;
   }
 }
